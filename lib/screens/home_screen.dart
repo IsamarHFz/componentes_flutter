@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practica3/theme/app_theme.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -24,7 +25,7 @@ class HomeScreen extends StatelessWidget {
             const Divider(),
             ListTile(
               title: Text('Lista infinita', 
-                        style: Theme.of(context).textTheme.headlineLarge,
+                        style: AppTheme.lightTheme.textTheme.headlineLarge,
                         ),
               subtitle: Text('Recuperar muchos elementos', 
                       style: Theme.of(context).textTheme.bodySmall,
