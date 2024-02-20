@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practica3/theme/app_theme.dart';
+// import 'package:practica3/theme/app_theme.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -19,19 +20,27 @@ class HomeScreen extends StatelessWidget {
               subtitle: Text('Recuperar infomación de TextField',
                             style: Theme.of(context).textTheme.bodySmall,
                             ),
-              leading: const Icon(Icons.input_rounded),
-              trailing: const Icon(Icons.arrow_right_outlined),
+              leading: const Icon(Icons.input_rounded, 
+                    color: AppTheme.secondaryColor,
+              ),
+              trailing: const Icon(Icons.arrow_right_outlined,
+                    color: AppTheme.secondaryColor,
+              ),
             ),
             const Divider(),
             ListTile(
               title: Text('Lista infinita', 
-                        style: AppTheme.lightTheme.textTheme.headlineLarge,
+                        style: Theme.of(context).textTheme.headlineLarge,
                         ),
               subtitle: Text('Recuperar muchos elementos', 
                       style: Theme.of(context).textTheme.bodySmall,
                       ),
-              leading: const Icon(Icons.list_alt_sharp),
-              trailing: const Icon(Icons.arrow_right_outlined),
+              leading: const Icon(Icons.list_alt_sharp,
+                        color: AppTheme.secondaryColor,
+              ),
+              trailing: const Icon(Icons.arrow_right_outlined,
+                        color: AppTheme.secondaryColor,
+              ),
             ),
             const Divider(),
             ListTile(
@@ -41,8 +50,12 @@ class HomeScreen extends StatelessWidget {
               subtitle: Text('Manejo de notificaciones', 
                         style: Theme.of(context).textTheme.bodySmall,
                         ),
-              leading: const Icon(Icons.notification_important),
-              trailing: const Icon(Icons.arrow_right_outlined),
+              leading: const Icon(Icons.notification_important, 
+                        color: AppTheme.secondaryColor,
+              ),
+              trailing: const Icon(Icons.arrow_right_outlined,
+                          color: AppTheme.secondaryColor,
+              ),
             ),
           ],
         ),

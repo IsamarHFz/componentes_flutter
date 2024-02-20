@@ -20,12 +20,17 @@ class AppTheme {
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
             color: primaryColor,
+            decoration: TextDecoration.underline,
+            decorationColor: primaryColor, 
+            decorationStyle: TextDecorationStyle.double,
+            decorationThickness: 1.5,
           ),
           // Fuennte para textos muy pequeños
           bodySmall: GoogleFonts.pacifico(
-            fontSize: 14.0,
+            fontSize: 18.0,
             fontWeight: FontWeight.w500,
             color: secondaryColor,
+            fontStyle: FontStyle.italic
           ), 
         ),
   );
