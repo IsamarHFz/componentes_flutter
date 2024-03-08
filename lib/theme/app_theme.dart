@@ -47,7 +47,7 @@ class AppTheme {
         textTheme: TextTheme(
           // Títulos de primer nivel
           headlineLarge: GoogleFonts.acme(
-            fontSize: 25.0,
+            fontSize: 23.0,
             fontWeight: FontWeight.bold,
             color: primaryColor,
             decoration: TextDecoration.underline,
@@ -57,7 +57,7 @@ class AppTheme {
           ),
           
           headlineMedium: GoogleFonts.alexandria(
-            fontSize: 25.5,
+            fontSize: 20.5,
             fontWeight: FontWeight.w700,
             color: secondaryColor,
 
